@@ -6,6 +6,7 @@ import HeroSection from "../Components/HeroSection";
 import Navbar from "../Components/Navbar";
 import AboutSection from "../Components/AboutSection";
 import Projects from "../Components/Projects";
+import EmailSection from "../Components/EmailSection";
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
         <HeroSection />
         <AboutSection />
         <Projects />
+        <EmailSection />
       </div>
     </main>
   );
