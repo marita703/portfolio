@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import HeroSection from "../Components/HeroSection";
 import Navbar from "../Components/Navbar";
 import AboutSection from "../Components/AboutSection";
+import Projects from "../Components/Projects";
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       <div className="container mx-auto px-12 py-4 mt-24">
         <HeroSection />
         <AboutSection />
+        <Projects />
       </div>
     </main>
   );

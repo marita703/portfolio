@@ -1,38 +1,57 @@
+"use Client";
 import React from "react";
 import ProjectCard from "./ProjectCard";
-
-const projectData = [
-  {
-    id: 1,
-    title: "Crypto Minter",
-    description:
-      "Web3App to mint a Private NFT Collection, featuring a ERC721 token contract",
-    image: "public/Images/Projects/1.png",
-    tag: ["All", "Web3"],
-  },
-  {
-    id: 2,
-    title: "Crypto Girls Club Website",
-    description:
-      "Web3 app developed for the Crypto Girls Club Comunity, featuring a NFT gated portal for holders of the CGC NFT",
-    image: "public/Images/Projects/2.png",
-    tag: ["All", "Web3"],
-  },
-  {
-    id: 3,
-    title: "DaoDemic",
-    description:
-      "Web3App to developed in ETHGlobal Hackaton, featuring Account Extraction, DAO creation for bounties distribution",
-    image: "public/Images/Projects/2.png",
-    tag: ["All", "Web3"],
-  },
-];
+import projectData from "../public/Data/Projects";
+import ProjectTabButton from "./ProjectTabButton";
+import { useState, useTransition } from "react";
 
 function Projects() {
+  const [tag, setTag] = useState("All");
+  const handleTagChange = (newTag: string) => {
+    setTag(newTag);
+  };
+  const filteredProjects = projectData.filter((project) => {
+    return project.tag.includes(tag);
+  });
   return (
-    <section>
-      <h2>Projects</h2>
-    </section>
+    <>
+      <h2 className="text-left md:text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-8 ">
+        My Projects
+      </h2>
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+        {/* the is selected is already defined, if the tag is ALL then is true if not is false, and this comes from the array that defines the data for the projects... somehow */}
+        <ProjectTabButton
+          name={"All"}
+          onClick={handleTagChange}
+          isSelected={tag === "All"}
+        />
+        <ProjectTabButton
+          name={"Web3"}
+          onClick={handleTagChange}
+          isSelected={tag === "Web3"}
+        />
+        <ProjectTabButton
+          name={"Web2"}
+          onClick={handleTagChange}
+          isSelected={tag === "Web2"}
+        />
+      </div>
+      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+        {/* here we just map the result from the filter function we wrote above to look for the ones that have in the tag array the tag that we are selecting */}
+        {filteredProjects.map((project) => {
+          return (
+            <ProjectCard
+              key={project.id}
+              imgUrl={project.image}
+              description={project.description}
+              title={project.title}
+              gitUrl={project.gitUrl}
+              previewUrl={project.previewUrl}
+            />
+          );
+        })}
+      </div>
+    </>
   );
 }
 
