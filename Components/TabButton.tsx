@@ -12,7 +12,7 @@ const TabButton: React.FC<TabButtonsProps> = ({
   children,
 }) => {
   const buttonClasses = active
-    ? "text-white border-b border-purple-500"
+    ? "text-white border-b border-primary-500"
     : "text-[#ADB7BE] ";
   return (
     <button onClick={selectTab}>

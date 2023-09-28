@@ -7,6 +7,7 @@ import Navbar from "../Components/Navbar";
 import AboutSection from "../Components/AboutSection";
 import Projects from "../Components/Projects";
 import EmailSection from "../Components/EmailSection";
+import Footer from "../Components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
         <Projects />
         <EmailSection />
       </div>
+      <Footer />
     </main>
   );
 };
