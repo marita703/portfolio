@@ -8,6 +8,7 @@ import AboutSection from "../Components/AboutSection";
 import Projects from "../Components/Projects";
 import EmailSection from "../Components/EmailSection";
 import Footer from "../Components/Footer";
+import AchivmentsSection from "../Components/AchivmentsSection";
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <Navbar />
       <div className="container mx-auto px-12 py-4 mt-24">
         <HeroSection />
+        <AchivmentsSection />
         <AboutSection />
         <Projects />
         <EmailSection />
