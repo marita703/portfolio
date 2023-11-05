@@ -32,11 +32,11 @@ const projectData = [
   {
     id: 4,
     description:
-      "Web3App to developed in ETHGlobal Hackaton, featuring Account Extraction, DAO creation for bounties distribution",
+      "Web3App developed in Solana Hyperdrive Hackaton, featuring Civic-Verification Technology, web3Authentication, and SolanaPay- Integration",
     image: "/Images/Projects/7.png",
     tag: ["All", "Web3", "Mobile"],
-    gitUrl: "https://github.com/marita703/ethglobalhackatonproject",
-    previewUrl: "https://github.com/marita703/ethglobalhackatonproject",
+    gitUrl: "https://github.com/marita703/HyperDrive-W3edClub",
+    previewUrl: "https://github.com/marita703/HyperDrive-W3edClub",
   },
 ];
 

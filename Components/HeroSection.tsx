@@ -40,10 +40,9 @@ function HeroSection() {
             />
           </h1>
           <p className="text-[#ADB7be] text-base sm:text-lg lg:text-xl mb-6">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi,
-            tenetur? Ab velit possimus eius necessitatibus. Inventore magnam
-            fugit soluta, mollitia qui facere quisquam provident dolores
-            repudiandae odio animi explicabo a.
+            I create seamless and user-friendly Web3 experiences. Specializing
+            in front-end design and on-Chain integrations, I bring your
+            decentralized projects to life.
           </p>
           <div>
             <button className="px-6 w-full sm:w-fit py-3 rounded-full mr-4 bg-gradient-to-br from-lime-500 via-primary-500 hover:bg-slate-200 text-white">
