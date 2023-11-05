@@ -31,6 +31,7 @@ const projectData = [
   },
   {
     id: 4,
+    title: "W3ed Club",
     description:
       "Web3App developed in Solana Hyperdrive Hackaton, featuring Civic-Verification Technology, web3Authentication, and SolanaPay- Integration",
     image: "/Images/Projects/7.png",
