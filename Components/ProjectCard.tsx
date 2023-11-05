@@ -21,7 +21,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div>
       {/* we marked as a group so when the user hovers on the elemnt, then we can show the overlay that is by default hidden */}
       <div
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
+        style={{
+          background: `url(${imgUrl})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
         className="h-52 md:h-72 rounded-t-xl relative group mt-4 md:mt-0"
       >
         {/* when I put group-hover:flex then it makes the element apear, and then change the opacity in order to be seen */}

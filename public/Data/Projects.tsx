@@ -23,9 +23,18 @@ const projectData = [
     id: 3,
     title: "DaoDemic",
     description:
-      "Web3App to developed in ETHGlobal Hackaton, featuring Account Extraction, DAO creation for bounties distribution",
+      "Web3App developed in ETHGlobal Hackaton, featuring Account Extraction, DAO creation for bounties distribution",
     image: "/Images/Projects/3.png",
     tag: ["All", "Web3"],
+    gitUrl: "https://github.com/marita703/ethglobalhackatonproject",
+    previewUrl: "https://github.com/marita703/ethglobalhackatonproject",
+  },
+  {
+    id: 4,
+    description:
+      "Web3App to developed in ETHGlobal Hackaton, featuring Account Extraction, DAO creation for bounties distribution",
+    image: "/Images/Projects/7.png",
+    tag: ["All", "Web3", "Mobile"],
     gitUrl: "https://github.com/marita703/ethglobalhackatonproject",
     previewUrl: "https://github.com/marita703/ethglobalhackatonproject",
   },

@@ -67,8 +67,8 @@ function HeroSection() {
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               src={heroImage}
               alt="hero"
-              width={300}
-              height={300}
+              width={400}
+              height={400}
             ></Image>
           </div>
         </motion.div>

@@ -46,9 +46,9 @@ function Projects() {
           isSelected={tag === "Web3"}
         />
         <ProjectTabButton
-          name={"Web2"}
+          name={"Mobile"}
           onClick={handleTagChange}
-          isSelected={tag === "Web2"}
+          isSelected={tag === "Mobile"}
         />
       </div>
       {/* from here we want our ref to take place */}
